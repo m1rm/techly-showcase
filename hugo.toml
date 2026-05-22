@@ -23,10 +23,6 @@ title = 'Hugo Theme Techly'
     name = 'Contact'
     pageRef = '/contact/'
     weight = 40
-  [[menus.main]]
-    name = 'Privacy Policy'
-    pageRef = '/privacy-policy/'
-    weight = 50
 
 [params]
   subtitle = 'A minimal Hugo theme for tech blogs — clean typography, responsive layout, and accessible by default.'
