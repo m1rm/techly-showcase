@@ -29,16 +29,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout site
+      - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #v6.0.2
         with:
-          path: hugo-techly
-          persist-credentials: false
-      - name: Checkout theme
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #v6.0.2
-        with:
-          repository: m1rm/techly
-          path: techly
           persist-credentials: false
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 #v3.2.1
@@ -46,8 +39,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
       - name: Build site
-        working-directory: hugo-techly
-        run: hugo --minify
+        run: hugo mod get && hugo --minify
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d #v6
       - name: Upload artifact
