@@ -38,7 +38,7 @@ title = 'Hugo Theme Techly'
 
   [params.newsletter]
     title = 'Stay up to date'
-    text = 'Get notified when new articles are published.'
+    text = 'Get notified when new versions are published.'
     url = 'https://github.com/m1rm/techly'
     label = 'View on GitHub'
     external = true
