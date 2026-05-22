@@ -15,6 +15,38 @@ title = 'Hugo Theme Techly'
     name = 'Posts'
     pageRef = '/posts/'
     weight = 20
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about/'
+    weight = 30
+  [[menus.main]]
+    name = 'Contact'
+    pageRef = '/contact/'
+    weight = 40
 
 [params]
-  description = 'Showcase site for Techly, a simple Hugo theme for tech blogs.'
+  subtitle = 'A minimal Hugo theme for tech blogs — clean typography, responsive layout, and accessible by default.'
+  description = 'Showcase site for Techly, a Hugo theme inspired by clean developer-focused blogs.'
+  mainSections = ['posts']
+
+  [params.author]
+    name = 'Miriam Müller'
+
+  [params.footer]
+    tagline = 'Techly — a simple Hugo theme for tech blogs.'
+    copyright = 'Miriam Müller'
+
+  [params.newsletter]
+    title = 'Stay up to date'
+    text = 'Get notified when new articles are published.'
+    url = 'https://github.com/m1rm/techly'
+    label = 'View on GitHub'
+    external = true
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
