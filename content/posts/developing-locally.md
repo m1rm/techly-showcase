@@ -1,6 +1,6 @@
 +++
 title = 'Developing Techly locally'
-date = 2026-05-22T10:00:00+02:00
+date = 2026-05-22T14:00:00+02:00
 draft = false
 description = 'How this example site uses a Go module replace to load the Techly theme from a sibling checkout — and what to do when Hugo serves an old copy instead.'
 tags = ['hugo', 'theme']

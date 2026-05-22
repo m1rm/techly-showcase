@@ -1,6 +1,6 @@
 +++
 title = 'Techly is under active development'
-date = 2026-05-22T14:00:00+02:00
+date = 2026-05-22T15:00:00+02:00
 draft = false
 description = 'Techly is a work in progress. This showcase site tracks the theme as it evolves — expect changes, rough edges, and occasional breaking updates.'
 tags = ['hugo', 'theme']
