@@ -5,7 +5,6 @@ title = 'Hugo Theme Techly'
 [module]
   [[module.imports]]
     path = 'github.com/m1rm/techly'
-    version = '0.1.0'
 
 [menus]
   [[menus.main]]
@@ -17,10 +16,6 @@ title = 'Hugo Theme Techly'
     pageRef = '/posts/'
     weight = 20
   [[menus.main]]
-    name = 'Archive'
-    pageRef = '/archive/'
-    weight = 25
-  [[menus.main]]
     name = 'About'
     pageRef = '/about/'
     weight = 30
@@ -28,6 +23,10 @@ title = 'Hugo Theme Techly'
     name = 'Contact'
     pageRef = '/contact/'
     weight = 40
+  [[menus.main]]
+    name = 'Privacy Policy'
+    pageRef = '/privacy-policy/'
+    weight = 50
 
 [params]
   subtitle = 'A minimal Hugo theme for tech blogs — clean typography, responsive layout, and accessible by default.'
@@ -55,6 +54,3 @@ title = 'Hugo Theme Techly'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
