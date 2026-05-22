@@ -22,7 +22,7 @@ pinned = true
 +++
 ```
 
-Pinned posts are sorted to the top of the **Posts** section listing (`/posts/`). Among pinned posts, the usual date order still applies — newest first.
+Pinned posts are sorted to the top of the home page and the **Posts** section listing (`/posts/`). Among pinned posts, the usual date order still applies — newest first.
 
 ## Show the pin indicator
 
