@@ -1,6 +1,6 @@
 +++
 title = 'Images in Posts'
-date = 2026-05-22T16:00:00+02:00
+date = 2026-05-22T10:00:00+02:00
 draft = false
 description = 'Keep images alongside your content with Hugo page bundles — organized, portable, and easy to reference.'
 tags = ['hugo', 'content']

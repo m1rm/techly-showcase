@@ -5,6 +5,8 @@ draft = false
 description = 'Techly is a work in progress. This showcase site tracks the theme as it evolves — expect changes, rough edges, and occasional breaking updates.'
 tags = ['hugo', 'theme']
 toc = true
+pinned = true
+pinnedIndicator = true
 +++
 
 If you landed here looking for a polished, finished Hugo theme — welcome anyway, but fair warning first: **Techly is under active development**.
@@ -45,6 +47,4 @@ Planned or in-progress work includes refinements to typography and documentation
 - **This showcase:** [github.com/m1rm/hugo-techly](https://github.com/m1rm/hugo-techly) — deployed at [m1rm.github.io/hugo-techly](https://m1rm.github.io/hugo-techly/)
 - **Releases:** watch the theme repo for tagged versions when you want to upgrade deliberately
 
-If you need a battle-tested theme today, [Hugo Theme Stack](https://github.com/CaiJimmy/hugo-theme-stack) is an excellent alternative. Techly is my attempt to build something smaller and more tailored — and that takes time.
-
-Thanks for stopping by while the paint is still drying.
+If you are experimenting with the theme locally, see [Developing Techly locally]({{< relref "developing-locally" >}}) for the module setup this site uses day to day.
