@@ -139,4 +139,4 @@ To build against a tagged release from GitHub instead of the local checkout:
 
 Keep the two repos side by side, avoid `_vendor/` during theme work, and clear the module cache when something looks outdated. That is all you need for a fast local theme loop.
 
-For installing Techly in a new site without local development, see [Getting Started with Techly]({{< relref "post-1" >}}).
+For installing Techly in a new site without local development, see [Getting Started with Techly]({{< relref "getting-started-with-techly" >}}).

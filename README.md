@@ -39,7 +39,7 @@ hugo mod get
 hugo server -D
 ```
 
-See the [Getting Started](https://m1rm.github.io/hugo-techly/posts/post-1/) post on the demo site for configuration examples.
+See the [Getting Started](https://m1rm.github.io/hugo-techly/posts/getting-started-with-techly/) post on the demo site for configuration examples.
 
 ## Repository layout
 
