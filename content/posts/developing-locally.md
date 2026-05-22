@@ -93,8 +93,6 @@ Hugo caches downloaded modules. After changing `go.mod` or the replace path, run
 
 A Go workspace file (`go work init . ../techly`) can work, but it is easy to combine with `_vendor/` or a warm module cache and still see old templates. A single **`replace` in `go.mod`** is the setup used here — explicit and easy to inspect.
 
-## CI and GitHub Pages
-
 GitHub Actions cannot rely on a sibling folder that only exists on your machine. The deploy workflow checks out **both** repositories:
 
 ```yaml
@@ -137,7 +135,6 @@ To build against a tagged release from GitHub instead of the local checkout:
 | Context | Theme source |
 |---------|----------------|
 | Local dev | `../techly` via `go.mod` replace |
-| CI / Pages | Same replace, both repos checked out as siblings |
 | Downstream sites | `github.com/m1rm/techly` from the module proxy, no replace |
 
 Keep the two repos side by side, avoid `_vendor/` during theme work, and clear the module cache when something looks outdated. That is all you need for a fast local theme loop.
