@@ -52,5 +52,9 @@ title = 'Hugo Theme Techly'
     [markup.goldmark.renderer]
       unsafe = true
 
+[taxonomies]
+  tag = "tags"
+  series = "series"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]

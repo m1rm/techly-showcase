@@ -26,6 +26,7 @@ At this stage, Techly already covers the basics of a small tech blog:
 - A clean home page with post listings
 - Single-post layouts with optional table of contents
 - Archive and search pages
+- Post series with series index, term pages, and in-article navigation
 - Client-side search with inline suggestions in the header
 - Dark mode and responsive navigation
 - Hugo module installation — no git submodules required
@@ -36,7 +37,7 @@ Sample posts on this site show tags, page bundles with images, and typical front
 
 I am building Techly for my own blog first: simple, opinionated, and free of integrations I do not need. That means some areas are intentionally minimal, and others are not done yet.
 
-Planned or in-progress work includes refinements to typography, post series support, and documentation. APIs and theme params may shift until the first stable `1.0` release.
+Planned or in-progress work includes refinements to typography and documentation. APIs and theme params may shift until the first stable `1.0` release.
 
 ## How to follow along
 

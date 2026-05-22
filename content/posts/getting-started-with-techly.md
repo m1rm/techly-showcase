@@ -4,6 +4,7 @@ date = 2026-05-22T12:00:00+02:00
 draft = false
 description = 'Install Techly as a Hugo module and start building a clean, accessible tech blog in minutes.'
 tags = ['hugo', 'theme']
+series = ['Using Techly']
 toc = true
 +++
 

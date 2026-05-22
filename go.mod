@@ -2,4 +2,6 @@ module github.com/m1rm/hugo-techly
 
 go 1.26.3
 
-require github.com/m1rm/techly v0.2.0 // indirect
+require github.com/m1rm/techly v0.3.0 // indirect
+
+replace github.com/m1rm/techly => ../techly

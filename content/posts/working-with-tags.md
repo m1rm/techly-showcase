@@ -4,6 +4,7 @@ date = 2026-05-22T10:00:00+02:00
 draft = false
 description = 'Use Hugo taxonomies out of the box — tag archive pages help readers discover related content.'
 tags = ['hugo', 'content']
+series = ['Using Techly']
 toc = true
 +++
 
