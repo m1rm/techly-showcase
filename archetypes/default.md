@@ -5,5 +5,5 @@ draft = true
 description = ''
 tags = []
 toc = true
-# featured_image = 'featured.jpg'  # optional cover for listing cards
+# featuredImage = 'featured.jpg'  # optional cover for listing cards
 +++

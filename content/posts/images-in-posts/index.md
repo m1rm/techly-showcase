@@ -28,7 +28,7 @@ Hugo resolves bundle resources automatically, so images stay organized and porta
 Listing cards only show a cover when you explicitly provide one — inline content images are not used automatically.
 
 ```yaml
-featured_image = 'featured.jpg'   # path or bundle filename
+featuredImage = 'featured.jpg'   # path or bundle filename
 showImage = false                 # hide cover for this post
 ```
 
