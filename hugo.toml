@@ -16,6 +16,10 @@ title = 'Hugo Theme Techly'
     pageRef = '/posts/'
     weight = 20
   [[menus.main]]
+    name = 'Archive'
+    pageRef = '/archive/'
+    weight = 25
+  [[menus.main]]
     name = 'About'
     pageRef = '/about/'
     weight = 30
@@ -50,3 +54,6 @@ title = 'Hugo Theme Techly'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
