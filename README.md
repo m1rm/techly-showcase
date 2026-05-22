@@ -30,6 +30,7 @@ Add the theme as a Hugo module in your `hugo.toml`:
 [module]
   [[module.imports]]
     path = 'github.com/m1rm/techly'
+    version = 'v0.2.0'
 ```
 
 Then fetch dependencies and build:

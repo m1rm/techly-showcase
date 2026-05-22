@@ -13,6 +13,7 @@ Techly is installed as a Hugo module. Add it to your site's configuration:
 [module]
   [[module.imports]]
     path = 'github.com/m1rm/techly'
+    version = 'v0.2.0'
 ```
 
 Then run `hugo mod get` and start the development server with `hugo server -D`.
