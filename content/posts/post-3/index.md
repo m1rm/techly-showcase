@@ -19,7 +19,7 @@ content/posts/my-post/
 
 Reference the image in Markdown with a relative path:
 
-![Bryce Canyon National Park](bryce-canyon.jpg)
+![Selfie of a woman with buzz cut black hair and sunglasses on a high wooden walkway in a forest](avatar.jpg)
 
 Hugo resolves bundle resources automatically, so images stay organized and portable as your site grows.
 
