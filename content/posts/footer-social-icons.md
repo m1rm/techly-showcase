@@ -98,6 +98,8 @@ Minimal site footer with social links and copyright:
     icon = 'github'
 ```
 
+With `since = 2020`, the footer shows `© 2020 - 2026 …` until the calendar year advances. If `since` equals the current year, or you omit it, only the current year appears (no `2026 - 2026`).
+
 Pair this with `assets/icons/github.svg`. Run `hugo server` and check the footer on any page.
 
 ## Troubleshooting

@@ -114,7 +114,9 @@ locale = 'en-us'
 | `banner.heading` | empty | Home hero `<h1>`; navbar uses `title` |
 | `banner.subheading` | falls back to `description` | Home hero subtitle |
 | `footer.copyright` | `params.author.name` | Copyright line name |
-| `footer.since` | empty | Shown before the year range in the footer |
+| `footer.since` | omitted | Start year; see copyright line below |
+
+When `footer.since` is set and **differs** from the current year, the footer shows a range (`2020 - 2026`). When it matches the current year, or when `since` is omitted, only the current year is shown (`© 2026 Your Name`). Use an integer in TOML (`since = 2026`), not a string.
 
 ## Menus
 
