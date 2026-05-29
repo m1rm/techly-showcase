@@ -1,9 +1,10 @@
 +++
 title = 'Techly is under active development'
-date = 2026-05-22T15:00:00+02:00
+date = 2026-05-08T09:00:00+02:00
+year = '2026'
 draft = false
 description = 'Techly is a work in progress. This showcase site tracks the theme as it evolves — expect changes, rough edges, and occasional breaking updates.'
-tags = ['hugo', 'theme']
+tags = ['general']
 toc = true
 pinned = true
 pinnedIndicator = true
@@ -11,11 +12,13 @@ pinnedIndicator = true
 
 If you landed here looking for a polished, finished Hugo theme — welcome anyway, but fair warning first: **Techly is under active development**.
 
-This site is the live example for the theme. What you see today is real and usable, but it is not a frozen product. Layouts, configuration options, and styling will change as the theme matures.
+**Techly 2.0** is out ([v2.0.1](https://github.com/m1rm/techly/releases/tag/v2.0.1) is the first installable v2 module release). This site runs that line of the theme. Layouts and configuration are more stable than in early v0.x days, but the project is still evolving.
+
+This site is the live example for the theme. What you see today is real and usable, but it is not a frozen product. Layouts, configuration options, and styling can still change between releases.
 
 ## What that means for you
 
-**Expect change.** Early releases may rename params, adjust templates, or rework components without a long deprecation period. Pin a [release tag](https://github.com/m1rm/techly/tags) in your `go.mod` or `hugo.toml` if you want predictable builds.
+**Pin a version.** Add `version = 'v2.0.1'` (or newer) under your module import in `hugo.toml` and run `hugo mod get` when you want predictable builds.
 
 **This site follows the theme.** [hugo-techly](https://github.com/m1rm/hugo-techly) exists to demonstrate Techly on GitHub Pages. When the theme updates, this example site updates with it — consider it a preview, not a promise of stability.
 
@@ -23,14 +26,15 @@ This site is the live example for the theme. What you see today is real and usab
 
 ## What works today
 
-At this stage, Techly already covers the basics of a small tech blog:
+Techly already covers the basics of a small tech blog:
 
-- A clean home page with post listings
-- Single-post layouts with optional table of contents
+- Home page with featured post, grid, and pagination
+- Single-post layouts with optional table of contents and related articles
 - Archive and search pages
 - Post series with series index, term pages, and in-article navigation
 - Client-side search with inline suggestions in the header
-- Dark mode and responsive navigation
+- Dark mode, syntax highlighting, and responsive navigation
+- Footer social links and optional `assets/css/custom.css` overrides
 - Hugo module installation — no git submodules required
 
 Sample posts on this site show tags, page bundles with images, and typical front matter. They are here to exercise the theme, not to teach Hugo from scratch.
@@ -39,7 +43,7 @@ Sample posts on this site show tags, page bundles with images, and typical front
 
 I am building Techly for my own blog first: simple, opinionated, and free of integrations I do not need. That means some areas are intentionally minimal, and others are not done yet.
 
-Planned or in-progress work includes refinements to typography and documentation. APIs and theme params may shift until the first stable `1.0` release.
+Planned or in-progress work includes refinements to typography and documentation. Major versions may still include breaking changes — check release notes before upgrading.
 
 ## How to follow along
 
@@ -47,4 +51,4 @@ Planned or in-progress work includes refinements to typography and documentation
 - **This showcase:** [github.com/m1rm/hugo-techly](https://github.com/m1rm/hugo-techly) — deployed at [m1rm.github.io/hugo-techly](https://m1rm.github.io/hugo-techly/)
 - **Releases:** watch the theme repo for tagged versions when you want to upgrade deliberately
 
-If you are experimenting with the theme locally, see [Developing Techly locally]({{< relref "developing-locally" >}}) for the module setup this site uses day to day.
+Start with the [Configuration overview]({{< relref "configuration-overview" >}}) and [Getting Started]({{< relref "getting-started-with-techly" >}}) posts in the **Using Techly** series. If you are experimenting locally, see [Developing Techly locally]({{< relref "developing-locally" >}}).

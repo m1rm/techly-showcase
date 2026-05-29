@@ -6,7 +6,7 @@ Example site and live showcase for **[Techly](https://github.com/m1rm/techly)** 
 
 The theme itself lives in a separate repository. This project holds the sample content, site configuration, and GitHub Pages deployment — use it as a reference when building your own site with Techly.
 
-> **Note:** Techly is under active development. Layouts and configuration may change between releases. Pin a theme version in production if you need stable builds.
+> **Note:** Techly is under active development. Pin a theme version in production if you need stable builds (currently **v2.0.1**).
 
 ## Quick start
 
@@ -29,8 +29,8 @@ Add the theme as a Hugo module in your `hugo.toml`:
 ```toml
 [module]
   [[module.imports]]
-    path = 'github.com/m1rm/techly'
-    version = 'v0.2.0'
+    path = 'github.com/m1rm/techly/v2'
+    version = 'v2.0.1'
 ```
 
 Then fetch dependencies and build:

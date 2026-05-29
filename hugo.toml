@@ -4,8 +4,8 @@ title = 'Hugo Theme Techly'
 
 [module]
   [[module.imports]]
-    path = 'github.com/m1rm/techly'
-    version = 'v1.0.0'
+    path = 'github.com/m1rm/techly/v2'
+    version = 'v2.0.1'
 
 [menus]
   [[menus.main]]
@@ -26,14 +26,18 @@ title = 'Hugo Theme Techly'
     weight = 40
 
 [params]
-  subtitle = 'A minimal Hugo theme for tech blogs — clean typography, responsive layout, and accessible by default.'
   description = 'Showcase site for Techly, a Hugo theme inspired by clean developer-focused blogs.'
   mainSections = ['posts']
+
+  [params.banner]
+    heading = 'Hugo Theme Techly'
+    subheading = 'A minimal Hugo theme for tech blogs — clean typography, responsive layout, and accessible by default.'
 
   [params.author]
     name = 'Miriam Müller'
 
   [params.footer]
+    since = 2026
     tagline = 'Techly — a simple Hugo theme for tech blogs.'
     copyright = 'Miriam Müller'
 
@@ -55,6 +59,7 @@ title = 'Hugo Theme Techly'
 [taxonomies]
   tag = "tags"
   series = "series"
+  year = "year"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

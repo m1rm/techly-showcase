@@ -1,9 +1,10 @@
 +++
 title = 'Organizing Posts into Series'
-date = 2026-05-22T14:00:00+02:00
+date = 2026-05-16T09:00:00+02:00
+year = '2026'
 draft = false
 description = 'Group related articles into a series — Techly adds notices, navigation, and archive pages automatically.'
-tags = ['hugo', 'content']
+tags = ['feature']
 series = ['Using Techly']
 toc = true
 +++

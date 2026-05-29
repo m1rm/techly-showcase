@@ -1,9 +1,11 @@
 +++
 title = 'Developing Techly locally'
-date = 2026-05-22T14:00:00+02:00
+date = 2026-05-13T09:00:00+02:00
+year = '2026'
 draft = false
 description = 'How this example site uses a Go module replace to load the Techly theme from a sibling checkout — and what to do when Hugo serves an old copy instead.'
-tags = ['hugo', 'theme']
+tags = ['general']
+series = ['Using Techly']
 toc = true
 +++
 
@@ -28,7 +30,8 @@ The site still declares the module import in `hugo.toml` the usual way:
 ```toml
 [module]
   [[module.imports]]
-    path = 'github.com/m1rm/techly'
+    path = 'github.com/m1rm/techly/v2'
+    version = 'v2.0.1'
 ```
 
 The local override lives in `go.mod`:
@@ -38,9 +41,9 @@ module github.com/m1rm/hugo-techly
 
 go 1.26.3
 
-replace github.com/m1rm/techly => ../techly
+replace github.com/m1rm/techly/v2 => ../techly
 
-require github.com/m1rm/techly v0.0.0
+require github.com/m1rm/techly/v2 v2.0.1
 ```
 
 `replace` tells Go (and Hugo's module loader) to use `../techly` instead of downloading the module from the proxy. Edit files in the theme repo, save, refresh the browser — no publish step required.
@@ -109,7 +112,7 @@ GitHub Actions cannot rely on a sibling folder that only exists on your machine.
 
 - name: Build site
   working-directory: hugo-techly
-  run: hugo --minify
+  run: hugo mod get && hugo --minify
 ```
 
 On the runner the layout matches local development:
@@ -120,14 +123,14 @@ workspace/
 └── techly/
 ```
 
-The same `replace github.com/m1rm/techly => ../techly` in `go.mod` resolves correctly in CI.
+The same `replace github.com/m1rm/techly/v2 => ../techly` in `go.mod` resolves correctly in CI when both repos are present. Production builds without `replace` download **v2.0.1** from the module proxy.
 
 ## Using a published theme again
 
 To build against a tagged release from GitHub instead of the local checkout:
 
 1. Remove or comment out the `replace` line in `go.mod`
-2. Run `hugo mod get github.com/m1rm/techly@v1.0.0` (or the version you need)
+2. Run `hugo mod get github.com/m1rm/techly/v2@v2.0.1` (or the version you need)
 3. Run `hugo mod clean --all` and rebuild
 
 ## Summary
@@ -135,7 +138,7 @@ To build against a tagged release from GitHub instead of the local checkout:
 | Context | Theme source |
 |---------|----------------|
 | Local dev | `../techly` via `go.mod` replace |
-| Downstream sites | `github.com/m1rm/techly` from the module proxy, no replace |
+| Downstream sites | `github.com/m1rm/techly/v2` from the module proxy, no replace |
 
 Keep the two repos side by side, avoid `_vendor/` during theme work, and clear the module cache when something looks outdated. That is all you need for a fast local theme loop.
 

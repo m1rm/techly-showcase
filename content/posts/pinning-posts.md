@@ -1,9 +1,10 @@
 +++
 title = 'Pinning Posts'
-date = 2026-05-22T17:12:00+02:00
+date = 2026-05-18T09:00:00+02:00
+year = '2026'
 draft = false
 description = 'Keep important posts at the top of your listing pages with pinned = true and an optional pin indicator.'
-tags = ['hugo', 'theme']
+tags = ['feature']
 series = ['Using Techly']
 toc = true
 +++

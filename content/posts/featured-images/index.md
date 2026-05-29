@@ -1,9 +1,10 @@
 +++
 title = 'Featured Images'
-date = 2026-05-22T19:00:00+02:00
+date = 2026-05-17T09:00:00+02:00
+year = '2026'
 draft = false
 description = 'Add a cover image to listing cards with featuredImage or a featured.* bundle resource.'
-tags = ['hugo', 'theme', 'content']
+tags = ['feature']
 series = ['Using Techly']
 toc = true
 featuredImage = 'featuredImageShowcase.jpg'
