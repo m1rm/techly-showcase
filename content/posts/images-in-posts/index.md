@@ -1,9 +1,11 @@
 +++
 title = 'Images in Posts'
-date = 2026-05-22T10:00:00+02:00
+date = 2026-05-15T09:00:00+02:00
+year = '2026'
 draft = false
 description = 'Keep images alongside your content with Hugo page bundles — organized, portable, and easy to reference.'
-tags = ['hugo', 'content']
+tags = ['general']
+series = ['Using Techly']
 toc = true
 +++
 
