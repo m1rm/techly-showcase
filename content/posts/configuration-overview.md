@@ -7,6 +7,7 @@ description = 'A map of hugo.toml settings for Techly — what the theme ships b
 tags = ['general']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Techly is configured through your site's `hugo.toml`, Hugo menus, and content layout. The theme module contributes **defaults** for markup and several `params` keys; other settings only work when **your site** defines them, because Hugo does not merge every table from theme modules.
@@ -77,6 +78,7 @@ Table of contents on posts and pages includes headings from level 2 through 3. G
 | `related.heading` | `"More articles"` | Section title |
 | `related.moreLink` | `"best"` | Tag button strategy |
 | `related.moreLabel` | `"More in %s"` | Tag button text |
+| `indexHome` | `true` | Index the home page and include it in `sitemap.xml` |
 
 No defaults are set for `banner`, `description`, `author`, `footer.tagline`, `footer.copyright`, `footer.since`, `newsletter`, or `searchPagePath` — you supply those when needed.
 
@@ -156,6 +158,7 @@ Override theme defaults only where you need different behavior:
 | Pinned posts | [Pinning posts]({{< relref "pinning-posts" >}}) |
 | Covers | [Featured images]({{< relref "featured-images" >}}) |
 | Search page path | `params.searchPagePath` — default tries `/search` and `/page/search` |
+| Search indexing | [Controlling search indexing]({{< relref "controlling-search-indexing" >}}) |
 
 ### Newsletter CTA (no theme default)
 
@@ -179,6 +182,8 @@ Techly does not require custom front matter beyond normal Hugo fields. Commonly 
 | Field | Scope | Purpose |
 | --- | --- | --- |
 | `description` | posts, pages | Lead text, cards, meta |
+| `index` | posts, pages | Opt in to search indexing and `sitemap.xml` |
+| `robots` | posts, pages | Override robots meta tag (e.g. `noindex, follow`) |
 | `tags` | posts | Taxonomy and related content |
 | `series` | posts | One series name per post |
 | `toc` | posts, pages | In-page table of contents |
@@ -201,6 +206,6 @@ Techly expects a `posts` section (or whatever you set in `mainSections`), option
 Posts in **Using Techly** are dated from general to specific:
 
 1. **general** — configuration, install, folders, tags, media
-2. **feature** — series, covers, pinning, related posts, social footer
+2. **feature** — series, covers, pinning, related posts, social footer, search indexing
 
 Shared tags within each group help the related-articles box suggest the next doc to read.

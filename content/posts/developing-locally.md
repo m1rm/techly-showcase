@@ -7,6 +7,7 @@ description = 'How this example site uses a Go module replace to load the Techly
 tags = ['general']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 This site ([hugo-techly](https://github.com/m1rm/hugo-techly)) is the working example for the [Techly](https://github.com/m1rm/techly) theme. In production it imports the theme as a Hugo module from GitHub. For day-to-day theme work, it loads the theme from a **local checkout** next to the site.

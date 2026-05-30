@@ -7,6 +7,7 @@ description = 'Where to put posts, series, search, and static pages so Techly la
 tags = ['general']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Techly does not impose a proprietary content format — it is a standard Hugo site with opinionated **paths and layouts**. If files live in the expected places, menus, search, series, and listing pages work without extra configuration.
@@ -182,9 +183,10 @@ Add tags in post front matter — no extra folders:
 
 ```toml
 tags = ['general']
+index = true   # opt in to search indexing (Techly default is opt-out)
 ```
 
-Techly renders tag lists on posts and paginated term pages at `/tags/<slug>/`.
+Techly renders tag lists on posts and paginated term pages at `/tags/<slug>/`. Tag listing pages are not indexed unless you set `index = true` on them explicitly. See [Controlling search indexing]({{< relref "controlling-search-indexing" >}}).
 
 ## Site assets (not under `content/`)
 
@@ -196,6 +198,8 @@ Some features expect files **outside** `content/`:
 | `assets/css/custom.css` | Site-specific style overrides |
 | `static/` | Favicon, `robots.txt`, files with fixed URLs |
 
+Add a `Sitemap:` URL in `static/robots.txt` pointing at your built `sitemap.xml`. Techly generates that file from pages with `index = true` (and the home page when `params.indexHome` is enabled).
+
 ## Minimal checklist for a new site
 
 1. `content/posts/` with at least one post and `_index.md`
@@ -203,6 +207,7 @@ Some features expect files **outside** `content/`:
 3. `[taxonomies]` and `[outputs]` in `hugo.toml`
 4. `content/search.md` with `layout = 'search'`
 5. `menus.main` pointing at Home, Posts, and any pages you create
-6. Optional: `content/archive.md`, `content/series/.../_index.md`, `assets/icons/` for social links
+6. `index = true` on posts you want search engines to index
+7. Optional: `content/archive.md`, `content/series/.../_index.md`, `assets/icons/` for social links
 
 This showcase repo is a working reference — browse `content/` alongside these posts to see each pattern in context.

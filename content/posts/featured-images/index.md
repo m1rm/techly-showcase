@@ -7,6 +7,7 @@ description = 'Add a cover image to listing cards with featuredImage or a featur
 tags = ['feature']
 series = ['Using Techly']
 toc = true
+index = true
 featuredImage = 'featuredImageShowcase.jpg'
 imageAlt = 'Techly blog listing card with a featured cover image'
 +++

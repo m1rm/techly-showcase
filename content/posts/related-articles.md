@@ -7,6 +7,7 @@ description = 'How Techly picks related posts at the end of an article, and how 
 tags = ['feature']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 At the bottom of every blog post, Techly can show a **related articles** grid: cover image, title, excerpt, and date. Under that, an optional button links readers to a tag archive — for example “More in hugo”.

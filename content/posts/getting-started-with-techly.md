@@ -7,6 +7,7 @@ description = 'Install Techly as a Hugo module and start building a clean, acces
 tags = ['general']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Techly is installed as a Hugo module. Add it to your site's configuration:

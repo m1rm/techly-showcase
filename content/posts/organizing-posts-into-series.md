@@ -7,6 +7,7 @@ description = 'Group related articles into a series — Techly adds notices, nav
 tags = ['feature']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Techly supports post series out of the box. Use it for multi-part tutorials, migration diaries, or any set of articles that read best in order.

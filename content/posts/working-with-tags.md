@@ -7,6 +7,7 @@ description = 'Use Hugo taxonomies out of the box — tag archive pages help rea
 tags = ['general']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Hugo's built-in taxonomy support works out of the box with Techly. Add tags to any post's front matter:

@@ -7,6 +7,7 @@ description = 'Keep images alongside your content with Hugo page bundles — org
 tags = ['general']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Page bundles are a convenient way to keep images alongside the content that references them. Place media files in the same directory as the post's `index.md`:

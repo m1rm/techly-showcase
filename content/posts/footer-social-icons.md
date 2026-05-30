@@ -7,6 +7,7 @@ description = 'Add GitHub, Mastodon, or other links to the footer with menus.soc
 tags = ['feature']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Techly can show a row of **social links** in the site footer — icon buttons with accessible text, opening external profiles in a new tab when the URL is absolute.

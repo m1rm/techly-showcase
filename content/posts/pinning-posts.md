@@ -7,6 +7,7 @@ description = 'Keep important posts at the top of your listing pages with pinned
 tags = ['feature']
 series = ['Using Techly']
 toc = true
+index = true
 +++
 
 Use pinning when an announcement or evergreen article should stay visible above newer posts — without backdating it or bumping the publish date.
